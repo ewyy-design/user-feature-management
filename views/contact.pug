@@ -1,0 +1,29 @@
+doctype html
+html
+head 
+    meta(charset='utf-8')
+    title="MyBank"
+    link(href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous")
+    script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous") 
+    link( href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet")
+body
+    nav(class="navbar navbar-dark bg-dark")
+        div(class="container-fluid")
+            div
+                bi.bi-bank2(style="color:#ffffff; font-size:32px; padding:5px; align-item:center")
+                ||
+                a(class="navbar-brand" href='#' style="font-weight:bold; font-size:32px")="MyBank"
+
+    div(class="container pt-5 pb-5")
+        nav(aria-label='breadcrumb')
+        ol(class="breadcrumb")
+            a(class="breadcrumb-item" href="/")="Home"
+            li(class="breadcrumb-item active" aria-currents="page")="Contact"
+
+        div(class="mx-auto pt-5" style="font-weight:bold; font-size: 32px; width: 300px;")="GET IN TOUCH" 
+        bi.bi-geo-alt-fill(style="font-size:32px")
+        h4="321 Main Street, Beverly Hills"
+        div(style="overflow:hidden;" class="z-depth-1-half map-container")
+        iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3305.791882922569!2d-118.24886828478503!3d34.0492092806068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c64986f63dc9%3A0x9997a0b5386bf3ea!2s321%20S%20Main%20St%2C%20Los%20Angeles%2C%20CA%2090013%2C%20USA!5e0!3m2!1sen!2ssg!4v1649574582095!5m2!1sen!2ssg" frameborder="0" style="border:0; height:55%; width:55%; position:absolute" allowfullscreen)
+
+

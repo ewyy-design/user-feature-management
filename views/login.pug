@@ -1,0 +1,28 @@
+html
+  include layouts/main.pug
+  body
+    div(class="container pt-5 pb-5")
+      nav(aria-label='breadcrumb')
+      ol(class="breadcrumb")
+        a(class="breadcrumb-item" href="/")="Home"
+        li(class="breadcrumb-item active" aria-currents="page")="Login"
+
+      h2(class="pt-5 pb-2 border-bottom")="MyBank Login"
+      if error 
+        div(class="alert alert-danger d-flex align-items-center alert-dismissible fade show " role="alert")
+          bi.bi-exclamation-triangle-fill(class="bi flex-shrink-0 me-2" d-flexwidth="24" height="24" role="img" aria-label="Danger:")
+          div=error
+          button(type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close")
+
+      form(class="row g-2" method="post" action="")
+        div(class="form-floating mb-3")
+          input(type="text" class="form-control" name="username" placeholder="Username")
+          label(for="floatingInput" style="padding-left:16px")="Username"
+
+        div(class="form-floating mb-3")
+          input( type="password" class="form-control" name="password" placeholder="Password")
+          label(for="floatingInput" style="padding-left:16px")="Password"
+          div(class="form-text")="We'll never share your password with anyone else."
+
+        div(class="col-auto")
+          button(type="submit" class="btn btn-primary")="Login"
